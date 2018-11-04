@@ -1,0 +1,16 @@
+{
+    "artistName": "Susanna Fogel",
+    "id": "1416993933",
+    "releaseDate": "2018-08-03",
+    "name": "The Spy Who Dumped Me",
+    "kind": "movie",
+    "copyright": "© 2018 Lions Gate Films Inc. All Rights Reserved",
+    "contentAdvisoryRating": "Explicit",
+    "artworkUrl100": "https://is3-ssl.mzstatic.com/image/thumb/Video118/v4/8f/20/63/8f20631e-f695-fad2-ca25-4aa736179b73/pr_source.lsr/200x200bb.png",
+    "genres": [{
+        "genreId": "4404",
+        "name": "Comedy",
+        "url": "https://itunes.apple.com/us/genre/id4404"
+    }],
+    "url": "https://itunes.apple.com/us/movie/the-spy-who-dumped-me/id1416993933"
+}

@@ -10,10 +10,13 @@ import UIKit
 import MovieBoxAPI
 
 class ViewController: UIViewController {
+    
+    let service: TopMoviesServiceProtocol = TopMoviesService()
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        MovieBoxAPIClient.testRun()
+        service.fetchTopMovies { (result) in
+            print(result)
+        }
     }
 }
