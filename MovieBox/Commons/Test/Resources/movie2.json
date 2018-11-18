@@ -1,0 +1,17 @@
+{
+    "artistName": "Brad Bird",
+    "id": "1392900449",
+    "releaseDate": "2018-06-15",
+    "name": "Incredibles 2",
+    "kind": "movie",
+    "copyright": "© 2018 Disney/Pixar",
+    "artworkUrl100": "https://is1-ssl.mzstatic.com/image/thumb/Video128/v4/c5/30/bb/c530bbb7-46e8-4a06-eba4-ef59483a1ce3/pr_source.lsr/200x200bb.png",
+    "genres": [
+        {
+            "genreId": "4410",
+            "name": "Kids & Family",
+            "url": "https://itunes.apple.com/us/genre/id4410"
+        }
+    ],
+    "url": "https://itunes.apple.com/us/movie/incredibles-2/id1392900449"
+}

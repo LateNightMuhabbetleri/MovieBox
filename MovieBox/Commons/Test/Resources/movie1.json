@@ -1,0 +1,17 @@
+{
+    "artistName": "Jon Turteltaub",
+    "id": "1417714264",
+    "releaseDate": "2018-08-10",
+    "name": "The Meg",
+    "kind": "movie",
+    "copyright": "© 2018 Warner Bros. Entertainment Inc. All Rights Reserved.",
+    "artworkUrl100": "https://is4-ssl.mzstatic.com/image/thumb/Video118/v4/48/0b/c2/480bc299-ade2-2c34-a067-530f21103747/pr_source.lsr/200x200bb.png",
+    "genres": [
+        {
+            "genreId": "4401",
+            "name": "Action & Adventure",
+            "url": "https://itunes.apple.com/us/genre/id4401"
+        }
+    ],
+    "url": "https://itunes.apple.com/us/movie/the-meg/id1417714264"
+}

@@ -20,6 +20,10 @@ public struct TopMoviesResponse: Decodable {
     
     public let results: [Movie]
     
+    init(results: [Movie]) {
+        self.results = results
+    }
+    
     public init(from decoder: Decoder) throws {
         let rootContainer = try decoder.container(keyedBy: RootCodingKeys.self)
         let feedContainer = try rootContainer.nestedContainer(keyedBy: FeedCodingKeys.self, forKey: .feed)
