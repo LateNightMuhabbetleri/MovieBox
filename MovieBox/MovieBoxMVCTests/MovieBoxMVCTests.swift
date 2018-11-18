@@ -7,15 +7,60 @@
 //
 
 import XCTest
-import MovieBoxAPI
+@testable import MovieBoxAPI
+@testable import MovieBoxMVC
 
 class MovieBoxMVCTests: XCTestCase {
+    
+    private var service: MockService!
+    private var view: MockMovieListView!
+    var controller: MovieListViewController!
 
     override func setUp() {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+        service = MockService()
+        view = MockMovieListView()
+        controller = MovieListViewController()
+        
+        controller.customView = view
+        controller.service = service
     }
+    
+    func testMovieList() throws {
+        
+        // Given
+        let movie1 = try ResourceLoader.loadMovie(resource: .movie1)
+        service.movies = [movie1]
+        
+        // When
+        controller.loadViewIfNeeded()
+        
+        // Then
+        XCTAssertEqual(view.isLoadingValues, [true, false])
+        XCTAssertEqual(view.movieList?.count, 1)
+        XCTAssertEqual(try view.movieList?.element(at: 0).title, movie1.name)
+    }
+}
 
-    override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
+private final class MockService: TopMoviesServiceProtocol {
+    
+    var movies: [Movie] = []
+    
+    func fetchTopMovies(completion: @escaping (Result<TopMoviesResponse>) -> Void) {
+        completion(.success(TopMoviesResponse(results: movies)))
+    }
+}
+
+private final class MockMovieListView: MovieListViewProtocol {
+    
+    var delegate: MovieListViewDelegate?
+    var movieList: [MoviePresentation]?
+    var isLoadingValues: [Bool] = []
+    
+    func updateMovieList(_ movieList: [MoviePresentation]) {
+        self.movieList = movieList
+    }
+    
+    func setLoading(_ isLoading: Bool) {
+        isLoadingValues.append(isLoading)
     }
 }
