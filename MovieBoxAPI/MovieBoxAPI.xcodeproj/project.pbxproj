@@ -11,6 +11,8 @@
 		3635F0562184FE4D00D9215B /* MovieBoxAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3635F0402184FDB900D9215B /* MovieBoxAPI.framework */; };
 		3635F06A218500A500D9215B /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3635F069218500A500D9215B /* Alamofire.framework */; };
 		3635F06C218501C400D9215B /* Alamofire.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 3635F069218500A500D9215B /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		363E034421A1E41A009E34F0 /* Utility.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 363E034321A1E41A009E34F0 /* Utility.framework */; };
+		3670D56C21A1EB7900474AF7 /* Utility.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3670D56B21A1EB7900474AF7 /* Utility.framework */; };
 		6283CC6B218F80340090E6C8 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6283CC6A218F80340090E6C8 /* Movie.swift */; };
 		6283CC6D218F81E30090E6C8 /* MovieTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6283CC6C218F81E30090E6C8 /* MovieTests.swift */; };
 		6283CC70218F82050090E6C8 /* Decoders.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6283CC6F218F82050090E6C8 /* Decoders.swift */; };
@@ -51,6 +53,8 @@
 		3635F0512184FE4D00D9215B /* MovieBoxAPITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MovieBoxAPITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3635F0552184FE4D00D9215B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3635F069218500A500D9215B /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = ../Vendor/Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
+		363E034321A1E41A009E34F0 /* Utility.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Utility.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3670D56B21A1EB7900474AF7 /* Utility.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Utility.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6283CC6A218F80340090E6C8 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
 		6283CC6C218F81E30090E6C8 /* MovieTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieTests.swift; sourceTree = "<group>"; };
 		6283CC6F218F82050090E6C8 /* Decoders.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Decoders.swift; sourceTree = "<group>"; };
@@ -65,6 +69,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				363E034421A1E41A009E34F0 /* Utility.framework in Frameworks */,
 				3635F06A218500A500D9215B /* Alamofire.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -73,6 +78,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3670D56C21A1EB7900474AF7 /* Utility.framework in Frameworks */,
 				3635F0562184FE4D00D9215B /* MovieBoxAPI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -125,6 +131,8 @@
 		3635F0682185008A00D9215B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				3670D56B21A1EB7900474AF7 /* Utility.framework */,
+				363E034321A1E41A009E34F0 /* Utility.framework */,
 				3635F069218500A500D9215B /* Alamofire.framework */,
 			);
 			name = Frameworks;

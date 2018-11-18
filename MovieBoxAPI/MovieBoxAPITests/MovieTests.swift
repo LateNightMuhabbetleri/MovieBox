@@ -8,12 +8,13 @@
 
 import XCTest
 @testable import MovieBoxAPI
+import Utility
 
 class MovieTests: XCTestCase {
 
     func testParsing() throws {
         let bundle = Bundle(for: MovieTests.self)
-        let url = bundle.url(forResource: "movie", withExtension: "json")!
+        let url = try bundle.url(forResource: "movie", withExtension: "json").unwrap()
         let data = try Data(contentsOf: url)
         let decoder = Decoders.plainDateDecoder
         let movie = try decoder.decode(Movie.self, from: data)

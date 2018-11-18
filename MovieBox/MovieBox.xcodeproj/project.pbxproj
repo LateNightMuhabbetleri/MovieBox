@@ -14,6 +14,8 @@
 		3635F02F2184FD3300D9215B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3635F02D2184FD3300D9215B /* LaunchScreen.storyboard */; };
 		3635F0672184FF2300D9215B /* MovieBoxAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3635F0632184FF1700D9215B /* MovieBoxAPI.framework */; };
 		3635F06E218502AC00D9215B /* MovieBoxAPI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3635F0632184FF1700D9215B /* MovieBoxAPI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		3670D54221A1E5CA00474AF7 /* Utility.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3670D53F21A1E5C300474AF7 /* Utility.framework */; };
+		3670D54321A1E5CA00474AF7 /* Utility.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3670D53F21A1E5C300474AF7 /* Utility.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +40,27 @@
 			remoteGlobalIDString = 3635F03F2184FDB900D9215B;
 			remoteInfo = MovieBoxAPI;
 		};
+		3670D53E21A1E5C300474AF7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3670D53921A1E5C300474AF7 /* Utility.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 363E032221A1E284009E34F0;
+			remoteInfo = Utility;
+		};
+		3670D54021A1E5C300474AF7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3670D53921A1E5C300474AF7 /* Utility.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 363E032B21A1E284009E34F0;
+			remoteInfo = UtilityTests;
+		};
+		3670D54421A1E5CA00474AF7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3670D53921A1E5C300474AF7 /* Utility.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 363E032121A1E284009E34F0;
+			remoteInfo = Utility;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -48,6 +71,7 @@
 			dstSubfolderSpec = 10;
 			files = (
 				3635F06E218502AC00D9215B /* MovieBoxAPI.framework in Embed Frameworks */,
+				3670D54321A1E5CA00474AF7 /* Utility.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -63,6 +87,7 @@
 		3635F02E2184FD3300D9215B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3635F0302184FD3300D9215B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3635F05D2184FF1700D9215B /* MovieBoxAPI.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = MovieBoxAPI.xcodeproj; path = ../MovieBoxAPI/MovieBoxAPI.xcodeproj; sourceTree = "<group>"; };
+		3670D53921A1E5C300474AF7 /* Utility.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Utility.xcodeproj; path = ../Utility/Utility.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +96,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3635F0672184FF2300D9215B /* MovieBoxAPI.framework in Frameworks */,
+				3670D54221A1E5CA00474AF7 /* Utility.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -111,6 +137,7 @@
 			isa = PBXGroup;
 			children = (
 				3635F05D2184FF1700D9215B /* MovieBoxAPI.xcodeproj */,
+				3670D53921A1E5C300474AF7 /* Utility.xcodeproj */,
 			);
 			name = Vendor;
 			sourceTree = "<group>";
@@ -120,6 +147,15 @@
 			children = (
 				3635F0632184FF1700D9215B /* MovieBoxAPI.framework */,
 				3635F0652184FF1700D9215B /* MovieBoxAPITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3670D53A21A1E5C300474AF7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3670D53F21A1E5C300474AF7 /* Utility.framework */,
+				3670D54121A1E5C300474AF7 /* UtilityTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -141,6 +177,7 @@
 			);
 			dependencies = (
 				3635F070218502AC00D9215B /* PBXTargetDependency */,
+				3670D54521A1E5CA00474AF7 /* PBXTargetDependency */,
 			);
 			name = MovieBox;
 			productName = MovieBox;
@@ -178,6 +215,10 @@
 					ProductGroup = 3635F05E2184FF1700D9215B /* Products */;
 					ProjectRef = 3635F05D2184FF1700D9215B /* MovieBoxAPI.xcodeproj */;
 				},
+				{
+					ProductGroup = 3670D53A21A1E5C300474AF7 /* Products */;
+					ProjectRef = 3670D53921A1E5C300474AF7 /* Utility.xcodeproj */;
+				},
 			);
 			projectRoot = "";
 			targets = (
@@ -199,6 +240,20 @@
 			fileType = wrapper.cfbundle;
 			path = MovieBoxAPITests.xctest;
 			remoteRef = 3635F0642184FF1700D9215B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		3670D53F21A1E5C300474AF7 /* Utility.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Utility.framework;
+			remoteRef = 3670D53E21A1E5C300474AF7 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		3670D54121A1E5C300474AF7 /* UtilityTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = UtilityTests.xctest;
+			remoteRef = 3670D54021A1E5C300474AF7 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -256,6 +311,11 @@
 			isa = PBXTargetDependency;
 			name = MovieBoxAPI;
 			targetProxy = 3635F06F218502AC00D9215B /* PBXContainerItemProxy */;
+		};
+		3670D54521A1E5CA00474AF7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Utility;
+			targetProxy = 3670D54421A1E5CA00474AF7 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -401,6 +461,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = P8EBW8LF2M;
 				INFOPLIST_FILE = MovieBox/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -419,6 +480,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = P8EBW8LF2M;
 				INFOPLIST_FILE = MovieBox/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
