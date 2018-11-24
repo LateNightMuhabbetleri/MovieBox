@@ -12,12 +12,12 @@ import XCTest
 
 class MovieBoxMVCTests: XCTestCase {
     
-    private var service: MockService!
+    private var service: MockTopMoviesService!
     private var view: MockMovieListView!
     var controller: MovieListViewController!
 
     override func setUp() {
-        service = MockService()
+        service = MockTopMoviesService()
         view = MockMovieListView()
         controller = MovieListViewController()
         
@@ -38,15 +38,6 @@ class MovieBoxMVCTests: XCTestCase {
         XCTAssertEqual(view.isLoadingValues, [true, false])
         XCTAssertEqual(view.movieList?.count, 1)
         XCTAssertEqual(try view.movieList?.element(at: 0).title, movie1.name)
-    }
-}
-
-private final class MockService: TopMoviesServiceProtocol {
-    
-    var movies: [Movie] = []
-    
-    func fetchTopMovies(completion: @escaping (Result<TopMoviesResponse>) -> Void) {
-        completion(.success(TopMoviesResponse(results: movies)))
     }
 }
 
