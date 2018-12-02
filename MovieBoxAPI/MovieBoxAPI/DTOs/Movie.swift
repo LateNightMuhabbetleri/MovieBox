@@ -8,7 +8,7 @@
 
 import Foundation
 
-public struct Movie: Decodable {
+public struct Movie: Decodable, Equatable {
     
     public enum CodingKeys: String, CodingKey {
         case artistName
@@ -27,6 +27,6 @@ public struct Movie: Decodable {
     public let genres: [Genre]
 }
 
-public struct Genre: Decodable {
+public struct Genre: Decodable, Equatable {
     public let name: String
 }
