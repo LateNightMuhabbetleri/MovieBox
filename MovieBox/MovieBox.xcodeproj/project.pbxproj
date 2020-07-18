@@ -859,9 +859,11 @@
 					};
 					62A2A60421A9C9E4007F821B = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1150;
 					};
 					62A2A61721A9C9E5007F821B = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1150;
 						TestTargetID = 62A2A60421A9C9E4007F821B;
 					};
 				};
@@ -1368,7 +1370,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.latenight.MovieBoxMVC;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -1387,7 +1389,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.latenight.MovieBoxMVC;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -1407,7 +1409,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.latenight.MovieBoxMVCTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MovieBoxMVC.app/MovieBoxMVC";
 			};
@@ -1428,7 +1430,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.latenight.MovieBoxMVCTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MovieBoxMVC.app/MovieBoxMVC";
 			};
@@ -1449,7 +1451,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.latenight.MovieBoxVIPER;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -1469,7 +1471,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.latenight.MovieBoxVIPER;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -1490,7 +1492,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.latenight.MovieBoxVIPERTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MovieBoxVIPER.app/MovieBoxVIPER";
 			};
@@ -1512,7 +1514,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.latenight.MovieBoxVIPERTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MovieBoxVIPER.app/MovieBoxVIPER";
 			};
@@ -1531,7 +1533,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.latenight.MovieBoxMVVM;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -1549,7 +1551,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.latenight.MovieBoxMVVM;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -1569,7 +1571,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.latenight.MovieBoxMVVMTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MovieBoxMVVM.app/MovieBoxMVVM";
 			};
@@ -1590,7 +1592,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.latenight.MovieBoxMVVMTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MovieBoxMVVM.app/MovieBoxMVVM";
 			};

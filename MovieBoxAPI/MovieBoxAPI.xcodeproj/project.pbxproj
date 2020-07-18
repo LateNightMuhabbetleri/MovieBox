@@ -234,7 +234,7 @@
 				TargetAttributes = {
 					3635F03F2184FDB900D9215B = {
 						CreatedOnToolsVersion = 10.0;
-						LastSwiftMigration = 1010;
+						LastSwiftMigration = 1150;
 					};
 					3635F0502184FE4D00D9215B = {
 						CreatedOnToolsVersion = 10.0;
@@ -248,6 +248,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = 3635F0362184FDB900D9215B;
 			productRefGroup = 3635F0412184FDB900D9215B /* Products */;
@@ -454,7 +455,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -480,7 +481,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.latenight.MovieBoxAPI;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

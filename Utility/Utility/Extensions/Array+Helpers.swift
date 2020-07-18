@@ -10,9 +10,9 @@ import Foundation
 
 public extension Array {
     
-    public struct IndexOutOfBoundsError: Error { }
+    struct IndexOutOfBoundsError: Error { }
     
-    public func element(at index: Int) throws -> Element {
+    func element(at index: Int) throws -> Element {
         guard index >= 0 && index < self.count else {
             throw IndexOutOfBoundsError()
         }

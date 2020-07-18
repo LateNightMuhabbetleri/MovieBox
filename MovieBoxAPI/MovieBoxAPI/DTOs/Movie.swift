@@ -20,7 +20,7 @@ public struct Movie: Decodable, Equatable {
     }
     
     public let artistName: String
-    public let releaseDate: Date
+    public let releaseDate: String
     public let name: String
     public let copyright: String?
     public let image: URL

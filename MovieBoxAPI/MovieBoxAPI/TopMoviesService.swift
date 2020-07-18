@@ -25,7 +25,7 @@ public class TopMoviesService: TopMoviesServiceProtocol {
     public func fetchTopMovies(completion: @escaping (Result<TopMoviesResponse>) -> Void) {
         let urlString = "https://rss.itunes.apple.com/api/v1/us/movies/top-movies/all/25/explicit.json"
         
-        request(urlString).responseData { (response) in
+        AF.request(urlString).responseData { (response) in
             switch response.result {
             case .success(let data):
                 let decoder = Decoders.plainDateDecoder
